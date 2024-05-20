@@ -1,0 +1,2 @@
+var = input('digite algo')
+print(f'ele e typo {type(var)} \n  ele e um numero: {var.isnumeric()} \n ele e composto por letras: {var.isalpha()} \n ele e um alfhanumerico : {var.isalnum()} \n ele tem letras maiusculas: {var.isupper()} ')
