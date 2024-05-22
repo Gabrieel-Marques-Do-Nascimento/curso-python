@@ -1,2 +1,5 @@
-var = input('digite algo')
-print(f'ele e typo {type(var)} \n  ele e um numero: {var.isnumeric()} \n ele e composto por letras: {var.isalpha()} \n ele e um alfhanumerico : {var.isalnum()} \n ele tem letras maiusculas: {var.isupper()} ')
+var = input('digite algo  ')
+print(f'resultado: {var} \n ele e typo {type(var)} \n  ele e um numero: {var.isnumeric()}  \n ele e numero decimal: {var.isdecimal()} \n ele e composto por letras: {var.isalpha()} \n ele e um alfhanumerico : {var.isalnum()} \n ele tem letras maiusculas: {var.isupper()} ')
+print('tem letras minusculas',var.islower())
+print('esta captalizada ?', var.istitle())
+print(f'   so tem espacos {var.isspace()}') 
