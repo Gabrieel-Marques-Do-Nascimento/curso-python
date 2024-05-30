@@ -12,7 +12,7 @@ frase = 'Curso em Video'
 
 # analize
 
-LE
+
 
 
 
