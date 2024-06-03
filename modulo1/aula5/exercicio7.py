@@ -4,7 +4,7 @@ import pygame
 pygame.init()
 
 
-pygame.mixer.music.load('musicas\musicc.mp3')
+pygame.mixer.music.load('modulo1\musicas\musicc.mp3')
 pygame.mixer.music.play()
 # pygame.event.wait()
 x = input('de enter para finalizar...')

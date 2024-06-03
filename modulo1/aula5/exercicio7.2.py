@@ -5,6 +5,7 @@ from pygame import mixer,event
 mixer.init()
 
 # substitua o nome do arquivo "musica.mp3" pelo seu arquivo mp3
-mixer.music.load('musicas\Bleach • Edit Mangá _ After Dark(MP3_320K).mp3')
+mixer.music.load('modulo1\musicas\Bleach • Edit Mangá _ After Dark(MP3_320K).mp3')
 mixer.music.play()
+
 x = input('Digite algo para parar...')
