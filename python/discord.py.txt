@@ -1,0 +1,35 @@
+Claro! Vou te mostrar algumas das funções mais usadas na biblioteca discord.py para criar bots no Discord, explicando de forma bem simples:
+
+1. *client.run('TOKEN')*: Inicia o bot. O "TOKEN" é como a chave secreta que liga seu código ao bot do Discord.
+
+2. *@client.event*: Decorador que você usa pra dizer que uma função vai reagir a um evento do Discord, tipo quando o bot entra em um servidor ou quando alguém manda uma mensagem.
+
+3. *async def on_ready()*: Função que é chamada quando o bot tá online e pronto pra uso. Você pode usar isso pra, por exemplo, mostrar uma mensagem no console dizendo que o bot tá funcionando.
+
+4. *async def on_message(message)*: Função que roda sempre que alguém manda uma mensagem em um canal que o bot tem acesso. Dá pra fazer o bot responder ou reagir a mensagens específicas.
+
+5. *await message.channel.send('Mensagem')*: Manda uma mensagem no mesmo canal onde a mensagem original foi enviada. Útil pra fazer o bot responder algo.
+
+6. *client.command()*: Decorador pra criar comandos personalizados. Esses comandos são usados no chat, começando com o prefixo definido, tipo !comando.
+
+7. *@bot.command(name='nome_do_comando')*: Define um comando específico que os usuários podem usar. O que vem depois de name é o que a galera digita no chat.
+
+8. *async def nome_do_comando(ctx)*: A função que vai ser executada quando o comando é chamado. ctx é o contexto, e você pode usar ele pra pegar informações sobre o comando, quem mandou, onde foi mandado, etc.
+
+9. *await ctx.send('Resposta')*: Manda uma resposta pro comando no chat. Bem parecido com o message.channel.send, mas usado dentro dos comandos.
+
+10. *@tasks.loop(seconds=60)*: Decorador pra criar uma tarefa que roda em um intervalo de tempo especificado. Perfeito pra fazer algo repetidamente, tipo mandar uma mensagem a cada X minutos.
+
+11. *async def my_task()*: Função que vai ser chamada repetidamente pela tarefa criada com @tasks.loop.
+
+12. *@client.event async def on_member_join(member)*: Função que é chamada quando alguém entra no servidor. Dá pra usar isso pra dar boas-vindas aos novos membros.
+
+13. *@client.event async def on_member_remove(member)*: Função que é chamada quando alguém sai do servidor. Dá pra usar isso pra se despedir ou registrar saídas.
+
+14. *member.guild*: Pega o servidor (guild) onde a ação aconteceu. Útil em várias situações, tipo pra saber em qual servidor um novo membro entrou.
+
+15. *client.get_channel(id)*: Pega um canal específico pelo ID. Você usa isso quando quer mandar uma mensagem pra um canal específico.
+
+16. *guild.create_text_channel('nome_do_canal')*: Cria um novo canal de texto no servidor.
+
+Essas são só algumas das funções mais usadas, mas já dão uma boa base pra começar a brincar com bots no Discord usando discord.py.

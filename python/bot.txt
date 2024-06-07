@@ -1,0 +1,55 @@
+Claro! Vou te dar uma lista com algumas das bibliotecas mais comuns usadas para criar bots de Discord em Python, junto com uma explicação breve de para que cada uma serve.
+
+1. *discord.py*:
+   - *O que faz*: É a biblioteca principal para criar bots no Discord. Permite conectar o bot ao servidor, ouvir eventos (como mensagens, reações, etc.), e responder a eles.
+   - *Pra que serve*: Basicamente, é o coração do seu bot, sem ela ele nem funciona.
+
+2. *asyncio*:
+   - *O que faz*: Fornece suporte para programação assíncrona em Python.
+   - *Pra que serve*: Ajuda o bot a fazer várias coisas ao mesmo tempo, como esperar por mensagens sem "travar".
+
+3. *requests*:
+   - *O que faz*: Facilita fazer requisições HTTP.
+   - *Pra que serve*: Permite que o bot se comunique com APIs externas para pegar ou enviar dados.
+
+4. *aiohttp*:
+   - *O que faz*: É similar ao requests, mas é assíncrono.
+   - *Pra que serve*: Ideal para quando o bot precisa fazer muitas requisições sem ficar lento.
+
+5. *json*:
+   - *O que faz*: Manipula dados no formato JSON.
+   - *Pra que serve*: Lê e escreve dados que podem ser usados para armazenar informações do bot, como configurações e estados.
+
+6. *os*:
+   - *O que faz*: Interage com o sistema operacional.
+   - *Pra que serve*: Acessa variáveis de ambiente e manipula arquivos e diretórios.
+
+7. *logging*:
+   - *O que faz*: Gerencia logs.
+   - *Pra que serve*: Ajuda a manter um registro das atividades do bot, muito útil para depuração e monitoramento.
+
+8. *random*:
+   - *O que faz*: Gera números aleatórios.
+   - *Pra que serve*: Adiciona aleatoriedade ao bot, como escolher respostas aleatórias ou sortear algo.
+
+9. *pytz*:
+   - *O que faz*: Lida com fusos horários.
+   - *Pra que serve*: Gerencia datas e horários corretamente, útil se o bot precisar agendar ou registrar eventos em diferentes fusos.
+
+10. *datetime*:
+    - *O que faz*: Manipula datas e horas.
+    - *Pra que serve*: Trabalha com datas e horários para registrar quando eventos ocorrem ou agendar ações futuras.
+
+11. *sqlite3*:
+    - *O que faz*: Trabalha com bancos de dados SQLite.
+    - *Pra que serve*: Armazena dados do bot de forma organizada e persistente.
+
+12. *re*:
+    - *O que faz*: Manipula expressões regulares.
+    - *Pra que serve*: Faz buscas e manipulações complexas de texto.
+
+13. *beautifulsoup4*:
+    - *O que faz*: Extrai dados de arquivos HTML e XML.
+    - *Pra que serve*: Útil para criar bots que buscam informações em sites.
+
+Essas são algumas das bibliotecas mais comuns, mas dependendo da complexidade do seu bot, você pode precisar de outras. Boa sorte com seu projeto de bot no Discord!

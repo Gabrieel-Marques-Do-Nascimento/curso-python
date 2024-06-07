@@ -1,0 +1,57 @@
+Claro! Aqui está uma lista das principais funções usadas no Python, explicadas de maneira bem informal:
+
+1. *print()*: Mostra algo na tela. É como dizer "olha isso aqui!".
+   
+2. *input()*: Pede pro usuário digitar algo. É tipo perguntar "E aí, qual a sua resposta?".
+
+3. *len()*: Conta quantos itens tem uma lista, string, etc. Como perguntar "Quantos tem aqui?".
+
+4. *type()*: Diz qual o tipo da coisa. É o mesmo que perguntar "O que é isso?".
+
+5. *int()*: Transforma algo em número inteiro. Como dizer "Vira número aí!".
+
+6. *float()*: Transforma algo em número decimal. Tipo "Preciso de um número com vírgula!".
+
+7. *str()*: Transforma algo em texto. Seria como dizer "Seja texto!".
+
+8. *list()*: Cria uma lista. É igual falar "Me dá uma lista disso!".
+
+9. *dict()*: Cria um dicionário. Como pedir "Quero um dicionário de chave e valor!".
+
+10. *set()*: Cria um conjunto, onde não tem itens repetidos. É como dizer "Só únicos, por favor!".
+
+11. *sum()*: Soma os itens de uma lista ou qualquer coisa somável. Como dizer "Soma tudo aí!".
+
+12. *max()*: Encontra o maior item. É o mesmo que perguntar "Qual o maior aqui?".
+
+13. *min()*: Encontra o menor item. Tipo "E o menorzinho?".
+
+14. *sorted()*: Ordena os itens. Como dizer "Organiza isso aí!".
+
+15. *range()*: Cria uma sequência de números. Tipo "Me dá uma sequência de números!".
+
+16. *zip()*: Junta dois ou mais iteráveis lado a lado. É como "Me dá pares de itens desses aí!".
+
+17. *enumerate()*: Dá números para os itens de um iterável. É igual a "Quero cada item com seu número!".
+
+18. *open()*: Abre um arquivo. É como "Abre esse arquivo pra mim!".
+
+19. *map()*: Aplica uma função a todos os itens de um iterável. Tipo "Transforma todos esses itens com essa função!".
+
+20. *filter()*: Filtra itens de um iterável que satisfazem uma condição. Como dizer "Só quero os itens que passam nesse filtro!".
+
+21. *reduce()*: Reduz os itens de um iterável a um único valor, usando uma função. É tipo "Junta tudo isso num valor só!".
+
+22. *any()*: Verifica se pelo menos um item é verdadeiro. Tipo "Algum desses é verdadeiro?".
+
+23. *all()*: Verifica se todos os itens são verdadeiros. Como perguntar "Todos esses são verdadeiros?".
+
+24. *round()*: Arredonda um número. É como "Arredonda isso aqui!".
+
+25. *abs()*: Dá o valor absoluto de um número. Tipo "Qual a distância desse número do zero?".
+
+26. *pow()*: Calcula a potência de um número. Como dizer "Eleva isso à potência tal!".
+
+27. *help()*: Mostra a ajuda sobre um comando. É o mesmo que dizer "Me explica isso aqui!".
+
+Essas são algumas das funções mais usadas em Python. Existem muitas outras, mas com essas você já consegue fazer bastante coisa!
