@@ -10,3 +10,10 @@ for t in range(0,10):
     cont+= 1
     print(f'{num} X {cont:2} = {num*cont:2}')
 print('-'*12)
+
+
+# professor
+
+tb = int(input('tabuada: '))
+for c in range(1,11):
+    print('{} X {:2} = {:2}'.format(tb,c,tb*c))
