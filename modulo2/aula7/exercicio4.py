@@ -4,18 +4,17 @@ while True:
     print('   CADASTRE UMA PESSOA')
     print(25*'-')
     idade = int(input('IDADE: \033[35m'))
-    
-    sexo = str(input('\033[mSEXO: [M/F] \033[32m')).strip().upper()[0] 
+    sexo = ' '
     while sexo not in 'MmFf':  
          sexo = str(input('\033[mSEXO: [M/F] \033[31m')).strip().upper()[0] 
     print('\033[m',25*'-')
-    if idade > 18:
+    if idade >= 18:
         pessoas+=1
     if sexo in 'Ff' and idade < 20:
         mulher+=1
     if sexo in 'Mm':
         homen+=1
-    contna = str(input('QUER CONTINUAR? [S/N] \033[32m')).strip().upper()[0]
+    contna = ' '
     while contna not in 'SsNn' :
         contna = str(input('\033[mQUER CONTINUAR? [S/N] \033[31m')).strip().upper()[0]
     if contna in 'Nn':
@@ -37,3 +36,6 @@ print('Tpotal de pessoas com mais de 18 anoe: {} ')
 print('Ao todo temos {} homens cadastrados')
 print('E temos {} Mulheres com menos de 20 Anos')
 '''
+
+
+# professor
