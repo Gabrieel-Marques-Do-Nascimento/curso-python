@@ -24,10 +24,26 @@ numeros_extenço = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis',
                    'quatorze', 'quinze', 'dezesseis', 'dezessete', 'desoito',
                    'dezenove', 'vinte', 'trinta', 'quarenta', 'cinquenta',
                    'sessenta', 'setenta', 'oiitenta', 'noventa', 'cem')
-n = int(input('Digite um número entre 0 e 20: '))
+# while True:
+#     n = int(input('Digite um número entre 0 e 20: '))
+#     while True:
+#         if n < 0 or n > 20:
+#             n = int(input('Tente novamente. Digite um número entre 0 e 20: '))
+#         else:
+#             break
+#     print(f'Você digitou o número {numeros_extenço[n]}')
+
+
+# professor
+
+
+
 while True:
-    if n < 0 or n > 20:
-        n = int(input('Tente novamente. Digite um número entre 0 e 20: '))
-    else:
+    n = int(input('Digite um número entre 0 e 20: '))
+    if 0 <= n <= 20:
         break
+    print('Tente novamente. ',end='')
+    
+        
 print(f'Você digitou o número {numeros_extenço[n]}')
+

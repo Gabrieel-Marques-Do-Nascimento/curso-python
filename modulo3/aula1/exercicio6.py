@@ -1,23 +1,37 @@
-
-
-
 tupla = ('Saudade','Cafune','Esperança','Serendipidade','Amor','Luz','Beleza',  'Aurora','Infinito','Poente', 'Chat-gpt')
 
 vogais = 'AEIOU'
 print()
-cont = conta = 0
+cont = frase = 0
 for c in range(0,len(tupla)):
   print(f"na palavra {tupla[c]} temos as vogais: ", end='')
-  frase = 'Saudade'
-  frasetm = len(frase)
-  for i in range(0,6):
-    if frase in 'Aa':
-            print(f'{vogais[i]}',end=" ")
-            #print(tupla[c].count('a'))
-            cont = cont + 1
-       
+  frase = tupla[c]
+  for i in range(0,len(frase)):
+    if frase[i] in 'Aa':
+      print(frase[i],end='')
+    if frase[i] in 'Ee':
+      print(frase[i],end='')
+    if frase[i] in 'Ii':
+      print(frase[i],end='')
+    if frase[i] in 'Oo':
+      print(frase[i],end='')
+    if frase[i] in 'Uu':
+      print(frase[i],end='')
   print()
-# frase = 'Saudade'
-# if frase.upper() in 'Aa':
-#     print('oi')
+  
+  # professor
+  
+  tupla = ('Saudade','Cafune','Esperança','Serendipidade','Amor','Luz','Beleza',  'Aurora','Infinito','Poente', 'Chat-gpt')
+
+vogais = 'AEIOU'
+print()
+cont = frase = 0
+for c in range(0,len(tupla)):
+  print(f"na palavra {tupla[c]} temos as vogais: ", end='')
+  frase = tupla[c]
+  for i in range(0,len(frase)):
+    if frase[i] in 'AaUuOoEeIi':
+      print(frase[i].lower(),end='')
+
+  print()
     

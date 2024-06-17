@@ -1,0 +1,2 @@
+galera = list()
+dados = []
