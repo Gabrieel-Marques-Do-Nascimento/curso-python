@@ -50,8 +50,6 @@ while True:
   if contar <= len(alunos)-1:
     print(f'Notas de {alunos[contar][0]} são {alunos[contar][1]}')
   elif contar == 999:
+    print('FINALIZANDO...')
     break
-print('FINALIZANDO...')
-print('<<< VOLTE SEMPRE >>>')
-print('FINALIZANDO...')
 print('<<< VOLTE SEMPRE >>>')
