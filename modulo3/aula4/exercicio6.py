@@ -15,12 +15,12 @@ for i in lista:
     a += i['idade']
 media = a/ len(lista)
 print(f'_A media de idade e de {media:.2f} anos.')
-print(f'_As mulheres cadastradas foram: ',end='')
+print('_As mulheres cadastradas foram: ',end='')
 for i in lista:
     if i['Sexo'] in 'Ff':
         print(i['nome'],end=' ')
 print()
-print(f'_lista de pessoas com idade acima da media:')
+print('_lista de pessoas com idade acima da media:')
 for i in lista:
     for k,v in i.items():
         if i['idade'] > media:

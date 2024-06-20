@@ -10,7 +10,7 @@ for k,v in jogadas.items():
     lista.append(jogadas[k])
     
     print(f'O {k} tirou {jogadas[k]}')
-print(f'<<< Rankng dos Jogadores >>>')
+print('<<< Rankng dos Jogadores >>>')
 lista.sort(reverse=True)
 cont = 0
 while len(jogadas) > cont:
