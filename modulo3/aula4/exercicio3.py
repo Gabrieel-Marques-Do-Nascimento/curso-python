@@ -9,10 +9,10 @@ clt['Ctps'] = int(input('Carteira de Trabalho: [0 nao tem] '))
 if clt['Ctps'] > 0:
     clt['Contratacao'] = int(input('Ano de Comtratacao: '))
     clt['Salario'] = float(input('Salario: '))
-    clt['Aposentadoria'] = (clt['Contratacao'] - anonsc) + 35
-else:
-    del clt['Ctps']
+    clt['Aposentadoria'] = (clt['Idade'] + clt['Contratacao'] + 35) - date.today().year  #clt['Aposentadoria'] = (clt['Contratacao'] - anonsc) + 35
+# else:
+#     del clt['Ctps']
 print(clt)
 
 for k,v in clt.items():
-    print(f'{k } Tem o Valor {v}')
+    print(f' - {k } Tem o Valor {v}')
