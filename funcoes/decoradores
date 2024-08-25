@@ -1,0 +1,74 @@
+O problema dessa abordagem é que teremos que repetir a operação de verificar se o usuário está logado em toda requisição para /admin/*.
+
+Isso gera código duplicado em todas essas funções. Sem contar que qualquer erro no “copia e cola” desse código pode estar expondo uma URL para qualquer usuário. Teeeenso! :hushed:
+
+Para evitar esse tipo de problema, podemos criar um decorator que verifica se o usuário que está requisitando aquela página já efetuou o login ou não da seguinte forma:
+
+
+
+
+
+
+
+
+
+
+
+# Decorator
+def requer_autenticacao(f):
+    @wraps(f)
+    def funcao_decorada(*args, **kwargs):
+        # Verifica session['logado']
+        if ('logado' not in session):
+            # Retorna para a URL de login caso o usuário não esteja logado
+            return redirect(url_for('index'))
+
+        return f(*args, **kwargs)
+    return funcao_decorada
+Para utilizar esse decorator, precisamos apenas incluí-lo nas funções que queremos restringir o acesso. Exemplo:
+
+
+
+
+
+
+
+# Olha quem tá aqui... Outro decorator :D
+@app.route('/admin/dashboard')
+@requer_autenticacao
+def admin_dashboard():    
+    # Renderiza o template dashboard.html
+    return render_template('admin/dashboard.html')
+
+
+
+    
+Pronto! Com apenas uma linha adicional de código (verificada em tempo de compilação, portanto qualquer erro será acusado pelo Python) conseguimos adicionar uma nova funcionalidade ao nosso código.
+
+E o decorator @wraps(f) na linha 3? O que faz?
+
+Quando utilizamos um decorator, estamos substituindo uma função X() por outra função Y() que engloba a função X().
+
+E o que isso traz de problema?
+
+Isso quer dizer que a nova função irá perder seus metadados (__name__, __docstring__, etc…). Esse não é um efeito que queremos que aconteça.
+
+Por exemplo, caso você tente mostrar na tela qual o nome da função após ela ter sido decorada, X.__name__ não irá apresentar seu nome original e sim o nome da função utilizada dentro do decorator.
+
+Para evitar esse efeito colateral, utilizamos a função functools.wraps.
+
+O que ela faz é copiar os metadados da função antes de ser decorada para sua versão decorada. Feito isso, utilizar um decorator não tira a identidade da sua função. Ela fica intacta!
+
+Conclusão
+Vimos neste post o poder dos Decorators e suas principais características.
+
+Decorators adicionam uma maneira rápido de trabalhar com metaprogramação em Python. De um modo geral, a metaprogramação é toda programação que age sobre outro programa, seja em seu código fonte, binário, ou numa representação abstrata em memória.
+
+Vimos também um exemplo real de utilização de decoratos juntamente com o framework web Flask para evitar que usuários não logados acessem uma URL indevida.
+
+É isso pessoal! Espero que esse post tenha facilitado o seu entendimento sobre decorators! Qualquer dúvida, sugestão ou crítica, por favor não hesite em comentar aqui embaixo!
+
+Vamos aprender juntos :punch:
+
+Até a próxima!
+
