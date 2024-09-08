@@ -70,3 +70,23 @@ def dizer_oi(nome):
 
 print(dizer_oi('Juliano'))
 # output: OLÁ, JULIANO!
+
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+# em classes
+
+class MinhaClasse:
+    def meu_decorador(func):
+        def wrapper(self, *args, **kwargs):
+            print(f"Chamando o método {func.__name__}...")
+            resultado = func(self, *args, **kwargs)
+            print(f"Método {func.__name__} finalizado.")
+            return resultado
+        return wrapper
+
+    @meu_decorador
+    def meu_metodo(self):
+        print("Executando meu_metodo.")
+
+obj = MinhaClasse()
+obj.meu_metodo()
