@@ -53,7 +53,7 @@ import weakref
 import functools
 
 # Biblioteca para acesso e manipulação de variáveis de ambiente
-import getenv
+# >>> import getenv
 
 # Biblioteca para codificação e decodificação de dados base64
 import base64
@@ -92,7 +92,7 @@ import code
 import signal
 
 # Biblioteca para operações básicas com conjuntos e estruturas de dados set
-import set
+# >>> import set
 
 # Biblioteca para suporte a operações matemáticas em vetores e matrizes
 import array
